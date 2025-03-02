@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.image_box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.image_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.image_photographer-name {
+    padding: 20px;
+    text-align: center;
+}
+.image_photographer{
+    color: yellowgreen;
+}
+
+.image_likes-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+.likeButton {
+    border: gold solid;
+    background: green;
+    cursor: pointer;
+}
+
+.likeButton:hover {
+    background-color: greenyellow;
+    transition: 0.3s ease;
+}
